@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".Signup">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="42dp"
+        android:drawableLeft="@android:drawable/stat_notify_chat"
+        android:hint="Name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/continuo"
+        android:layout_width="193dp"
+        android:layout_height="51dp"
+        android:text="Continuo"
+        android:textSize="24sp"
+        app:backgroundTint="#0A196C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <EditText
+        android:id="@+id/emailSignup"
+        android:layout_width="341dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:ems="10"
+        android:hint="UserName(E_mail)"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/passwordSignup"
+        android:layout_width="341dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailSignup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="339dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="28dp"
+        android:checkedButton="@id/male"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSignup">
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="295dp"
+            android:layout_height="34dp"
+            android:text="Female"
+            android:textColor="#171616" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#100F0F" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="138dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="44dp"
+        android:text="Register"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
